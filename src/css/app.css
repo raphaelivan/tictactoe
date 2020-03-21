@@ -1,20 +1,21 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background: #fff;
 }
 
-ol, ul {
-  padding-left: 30px;
+#container {
+  width: 80%;
+  margin: 4px auto;
+  background: rgb(245, 243, 243);
+  padding: 12px;
 }
+
 
 .board-row:after {
   clear: both;
   content: "";
   display: table;
-}
-
-.status {
-  margin-bottom: 10px;
 }
 
 .square {
@@ -47,12 +48,4 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
-}
-
-
-
-.input-result {
-  padding: 4px 3px; 
-  display: block;
-  font-size: 20px;
 }
