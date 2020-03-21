@@ -4,7 +4,10 @@ function ResetGameButton(props) {
   return ( 
     <div>
       <br></br>
-      <button onClick={props.onClick}> Reset Game </button>
+      <button  className='btn btn-danger btn-sm' onClick={props.onClick}> 
+        <i class='fa fa-pencil'></i>
+        Reset Game 
+      </button>
     </div>
   );
 }

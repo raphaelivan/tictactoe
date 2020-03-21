@@ -1,30 +1,24 @@
 import React from 'react';
+import '../src/css/bootstrap.min.css';
 import '../src/css/app.css';
+
 //import NewSquare from './components/newSquareComponent';
 import Board from './components/boardComponent';
 
 class Game extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+        <div className="col-md-12">
+          <Board stateGame={this.state}/>
         </div>
       </div>
     );
   }
 }
-
-// class FullGame extends React.Component {
-//   render () {
-//     return (
-//       <NewSquare />
-//     )
-//   }
-// }
 
 export default Game;
