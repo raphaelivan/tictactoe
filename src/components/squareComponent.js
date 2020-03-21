@@ -10,8 +10,7 @@ function Square(props) { // create a function components. Functions component do
       className="square"
       onClick={ props.onClick } 
       // in fucnction component we don't need call this.props because it not exist
-      >
-      
+      >      
       {props.value}     
     </button>
   );
