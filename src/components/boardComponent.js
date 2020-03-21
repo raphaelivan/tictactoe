@@ -5,10 +5,7 @@ import ResetGame from './resetgamecomponent';
 class Board extends React.Component {  
   constructor(props){
     super(props);
-    this.state = {
-      squares: Array(9).fill(null),
-      xIsNext: true
-    }
+    this.state = { squares: Array(9).fill(null), xIsNext: true };
   }
 
   handleClick(i) {
@@ -27,10 +24,7 @@ class Board extends React.Component {
   }
 
   handleResetGame(){
-    this.setState({
-      squares: Array(9).fill(null),
-      xIsNext: true
-    })
+    this.setState({ squares: Array(9).fill(null), xIsNext: true });
   }
 
   renderSquare(i) {
